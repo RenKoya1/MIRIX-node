@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="../MIRIX/assets/logo.png" alt="Mirix Logo" width="200">
-</p>
 
 # MIRIX-node
 
