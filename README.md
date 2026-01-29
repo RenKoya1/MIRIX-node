@@ -73,7 +73,7 @@ It provides a multi-agent architecture with six specialized memory systems (Core
 
 ```bash
 # Clone
-git clone <repository-url>
+git clone https://github.com/RenKoya1/MIRIX-node
 cd mirix_migration/MIRIX-node
 
 # Install dependencies
