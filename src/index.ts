@@ -13,6 +13,12 @@ export * from './log.js';
 // Errors
 export * from './errors.js';
 
+// Embeddings
+export * from './embeddings.js';
+
+// Pricing
+export * from './pricing.js';
+
 // LLM API (Vercel AI SDK)
 export * from './llm_api/index.js';
 
