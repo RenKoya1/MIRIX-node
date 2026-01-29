@@ -119,3 +119,4 @@ export const MemoryType = {
 } as const;
 
 export type MemoryType = (typeof MemoryType)[keyof typeof MemoryType];
+

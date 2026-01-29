@@ -9,7 +9,7 @@ export {
     type JobResult,
     type JobHandler,
     type QueueConfig,
-} from './manager.js';
+} from './manager';
 
 export {
     queueWorker,
@@ -18,6 +18,6 @@ export {
     type MemoryJobData,
     type BackgroundAgentJobData,
     type CleanupJobData,
-} from './worker.js';
+} from './worker';
 
-export { memoryProcessor } from './memory-processor.js';
+export { memoryProcessor } from './memory-processor';

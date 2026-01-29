@@ -3,9 +3,9 @@
  * Core tool for searching through conversation history
  */
 
-import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types.js';
-import { messageManager } from '../../services/message-manager.js';
-import { logger } from '../../log.js';
+import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types';
+import { messageManager } from '../../services/message-manager';
+import { logger } from '../../log';
 
 // ============================================================================
 // CONVERSATION SEARCH TOOL

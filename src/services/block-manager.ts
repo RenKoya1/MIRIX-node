@@ -4,9 +4,9 @@
  */
 
 import { Block, Prisma } from '@prisma/client';
-import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager.js';
-import { RedisMemoryClient } from '../database/redis-client.js';
-import { ValidationError } from '../errors.js';
+import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager';
+import { RedisMemoryClient } from '../database/redis-client';
+import { ValidationError } from '../errors';
 
 // ============================================================================
 // TYPES

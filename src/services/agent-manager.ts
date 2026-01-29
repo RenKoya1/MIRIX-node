@@ -6,11 +6,11 @@
 
 import { Prisma } from '@prisma/client';
 import type { Agent, AgentType, Tool, Block } from '@prisma/client';
-import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager.js';
-import { RedisMemoryClient } from '../database/redis-client.js';
-import { ValidationError, NotFoundError } from '../errors.js';
-import { LLMConfigSchema } from '../schemas/llm_config.js';
-import type { LLMConfig } from '../schemas/llm_config.js';
+import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager';
+import { RedisMemoryClient } from '../database/redis-client';
+import { ValidationError, NotFoundError } from '../errors';
+import { LLMConfigSchema } from '../schemas/llm_config';
+import type { LLMConfig } from '../schemas/llm_config';
 import { z } from 'zod';
 
 // ============================================================================

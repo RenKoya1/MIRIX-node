@@ -11,7 +11,7 @@
  * - output: cost per 1M output (completion) tokens in dollars
  */
 
-import { logger } from './log.js';
+import { logger } from './log';
 
 // ============================================================================
 // PRICING MARKUP

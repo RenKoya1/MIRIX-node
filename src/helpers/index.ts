@@ -19,7 +19,7 @@ export {
     addHours,
     startOfDay,
     endOfDay,
-} from './datetime-helpers.js';
+} from './datetime-helpers';
 
 // JSON helpers
 export {
@@ -31,7 +31,7 @@ export {
     isValidJson,
     prettyJson,
     compactJson,
-} from './json-helpers.js';
+} from './json-helpers';
 
 // Converters
 export {
@@ -45,7 +45,7 @@ export {
     snakeToCamel,
     objectToSnakeCase,
     objectToCamelCase,
-} from './converters.js';
+} from './converters';
 
 export type {
     TextContent,
@@ -55,4 +55,4 @@ export type {
     MessageContent,
     ToolRuleInput,
     ToolRuleOutput,
-} from './converters.js';
+} from './converters';

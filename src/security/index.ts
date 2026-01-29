@@ -14,7 +14,7 @@ export {
     maskApiKey,
     partialReveal,
     ApiKeyPrefix,
-} from './api-key.js';
+} from './api-key';
 
 // Permission utilities
 export {
@@ -28,8 +28,8 @@ export {
     getAllowedActions,
     scopeIncludes,
     mergeScopes,
-} from './permissions.js';
+} from './permissions';
 
 export type {
     AccessScope,
-} from './permissions.js';
+} from './permissions';

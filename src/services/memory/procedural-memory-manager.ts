@@ -4,10 +4,10 @@
  */
 
 import { ProceduralMemoryItem, Prisma } from '@prisma/client';
-import { BaseMemoryManager, CacheConfig, MemoryListOptions } from './base-memory-manager.js';
-import { RedisMemoryClient } from '../../database/redis-client.js';
-import { ActorContext, ListResult } from '../base-manager.js';
-import { ValidationError } from '../../errors.js';
+import { BaseMemoryManager, CacheConfig, MemoryListOptions } from './base-memory-manager';
+import { RedisMemoryClient } from '../../database/redis-client';
+import { ActorContext, ListResult } from '../base-manager';
+import { ValidationError } from '../../errors';
 
 // ============================================================================
 // TYPES

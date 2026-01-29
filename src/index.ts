@@ -5,22 +5,40 @@
  */
 
 // Schemas
-export * from './schemas/index.js';
+export * from './schemas/index';
 
 // Logging
-export * from './log.js';
+export * from './log';
 
 // Errors
-export * from './errors.js';
+export * from './errors';
+
+// Constants
+export * from './constants';
+
+// Settings
+export * from './settings';
+
+// Config
+export * from './config';
+
+// Utils
+export * from './utils';
 
 // Embeddings
-export * from './embeddings.js';
+export * from './embeddings';
 
 // Pricing
-export * from './pricing.js';
+export * from './pricing';
+
+// Interface (Agent Events)
+export * from './interface';
+
+// Tracing (OpenTelemetry)
+export * from './tracing';
 
 // LLM API (Vercel AI SDK)
-export * from './llm_api/index.js';
+export * from './llm_api/index';
 
 // Database (Prisma + Redis) - explicit exports to avoid conflicts
 export {
@@ -33,7 +51,7 @@ export {
     getRedisClient,
     initRedisClient,
     RedisMemoryClient,
-} from './database/index.js';
+} from './database/index';
 
 // Services (Managers) - explicit exports to avoid conflicts
 export {
@@ -47,7 +65,7 @@ export {
     // Agent
     agentManager,
     AgentToolRuleType,
-} from './services/index.js';
+} from './services/index';
 
 // Re-export types explicitly to avoid conflicts
 export type {
@@ -70,7 +88,7 @@ export type {
     UpdateAgentInput,
     AgentListOptions,
     AgentWithRelations,
-} from './services/index.js';
+} from './services/index';
 
 // Tools
 export {
@@ -78,7 +96,7 @@ export {
     toolRuleSolver,
     createSandbox,
     toolSandbox,
-} from './tools/index.js';
+} from './tools/index';
 
 export type {
     ToolDefinition,
@@ -88,7 +106,7 @@ export type {
     ToolReturn,
     ToolRule,
     ToolExecutionState,
-} from './tools/index.js';
+} from './tools/index';
 
 // Agent
 export {
@@ -98,14 +116,23 @@ export {
     DEFAULT_AGENT_CONFIG,
     AgentStatus,
     createAgentState,
-} from './agent/index.js';
+    MetaAgent,
+    MemoryAgentStates,
+    MEMORY_AGENT_CONFIGS,
+    createMetaAgent,
+} from './agent/index';
 
 export type {
     AgentConfig,
     AgentResult,
     AgentState,
     AgentStep,
-} from './agent/index.js';
+    MemoryAgentConfig,
+    MetaAgentOptions,
+    MemoryAgentType,
+    MetaAgentEmbeddingConfig,
+    MetaAgentUsageStatistics,
+} from './agent/index';
 
 // Server
 export {
@@ -116,12 +143,12 @@ export {
     requirePermission,
     errorHandler,
     notFoundHandler,
-} from './server/index.js';
+} from './server/index';
 
 export type {
     AuthContext,
     ErrorResponse,
-} from './server/index.js';
+} from './server/index';
 
 // Queue
 export {
@@ -129,7 +156,7 @@ export {
     queueWorker,
     memoryProcessor,
     JobType,
-} from './queue/index.js';
+} from './queue/index';
 
 export type {
     QueueJob,
@@ -140,12 +167,12 @@ export type {
     MemoryJobData,
     BackgroundAgentJobData,
     CleanupJobData,
-} from './queue/index.js';
+} from './queue/index';
 
 // Version
 export const VERSION = '0.1.0';
 
 // Log startup
-import { getLogger } from './log.js';
+import { getLogger } from './log';
 const logger = getLogger('mirix');
 logger.info({ version: VERSION }, 'Mirix TypeScript initialized');

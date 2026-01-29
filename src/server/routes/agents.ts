@@ -6,11 +6,11 @@
 import { Hono } from 'hono';
 import { z } from 'zod';
 import { AgentType } from '@prisma/client';
-import { agentManager, CreateAgentInput, UpdateAgentInput } from '../../services/agent-manager.js';
-import { createAgent } from '../../agent/index.js';
-import { authMiddleware, requirePermission } from '../middleware/auth.js';
-import { ValidationError, NotFoundError } from '../../errors.js';
-import { logger } from '../../log.js';
+import { agentManager, CreateAgentInput, UpdateAgentInput } from '../../services/agent-manager';
+import { createAgent } from '../../agent/index';
+import { authMiddleware, requirePermission } from '../middleware/auth';
+import { ValidationError, NotFoundError } from '../../errors';
+import { logger } from '../../log';
 
 // Helper to format Zod errors
 function formatZodErrors(errors: z.ZodIssue[]): string {

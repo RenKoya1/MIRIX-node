@@ -4,7 +4,7 @@
  */
 
 import { PrismaClient, Prisma } from '@prisma/client';
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 // Global reference to the Prisma client for development hot-reloading
 declare global {

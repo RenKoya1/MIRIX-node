@@ -7,7 +7,7 @@ import { z } from 'zod';
 import {
     MirixAssistantMessageContentUnionSchema,
     MirixUserMessageContentUnionSchema,
-} from './mirix_message_content.js';
+} from './mirix_message_content';
 
 /**
  * Message types

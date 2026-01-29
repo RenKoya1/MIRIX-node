@@ -8,4 +8,4 @@ export {
     coreMemoryGetTool,
     coreMemoryUpdateTool,
     coreMemoryAppendTool,
-} from './core-memory.js';
+} from './core-memory';

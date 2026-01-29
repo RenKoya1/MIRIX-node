@@ -4,7 +4,7 @@
  */
 
 import { Message, Agent } from '@prisma/client';
-import { ToolCall, ToolReturn, ToolExecutionState, createExecutionState } from '../tools/index.js';
+import { ToolCall, ToolReturn, ToolExecutionState, createExecutionState } from '../tools/index';
 
 // ============================================================================
 // STATE TYPES

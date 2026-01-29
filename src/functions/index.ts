@@ -17,12 +17,12 @@ export {
     enumParam,
     arrayParam,
     objectParam,
-} from './schema-generator.js';
+} from './schema-generator';
 
 export type {
     FunctionSchema,
     PropertySchema,
-} from './schema-generator.js';
+} from './schema-generator';
 
 // Base functions
 export {
@@ -36,7 +36,7 @@ export {
     searchInMemorySchema,
     baseFunctionSchemas,
     baseFunctions,
-} from './base-functions.js';
+} from './base-functions';
 
 // Memory functions
 export {
@@ -69,7 +69,7 @@ export {
     knowledgeMemorySearchSchema,
     memoryFunctionSchemas,
     memoryFunctions,
-} from './memory-functions.js';
+} from './memory-functions';
 
 // Combined exports
 export const allFunctionSchemas = [

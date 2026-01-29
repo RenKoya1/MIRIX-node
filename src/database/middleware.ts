@@ -4,7 +4,7 @@
  * Note: Prisma 5+ uses extensions instead of middleware for most use cases
  */
 
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 // Models that support soft delete
 export const SOFT_DELETE_MODELS = [

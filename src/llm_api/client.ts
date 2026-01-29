@@ -18,9 +18,9 @@ import {
     type LanguageModel,
 } from 'ai';
 import { z } from 'zod';
-import { getLogger } from '../log.js';
-import { LLMConfig, LLMEndpointType } from '../schemas/llm_config.js';
-import { LLMAPIError } from '../errors.js';
+import { getLogger } from '../log';
+import { LLMConfig, LLMEndpointType } from '../schemas/llm_config';
+import { LLMAPIError } from '../errors';
 
 const logger = getLogger('llm-client');
 

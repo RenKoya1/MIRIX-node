@@ -3,9 +3,9 @@
  * Tools for reading and modifying core memory blocks
  */
 
-import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types.js';
-import { blockManager } from '../../services/block-manager.js';
-import { logger } from '../../log.js';
+import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types';
+import { blockManager } from '../../services/block-manager';
+import { logger } from '../../log';
 
 // ============================================================================
 // CORE MEMORY READ TOOL

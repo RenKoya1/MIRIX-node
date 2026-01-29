@@ -14,14 +14,14 @@ export {
     type ListResult,
     type CacheConfig,
     type AccessPermission,
-} from './base-manager.js';
+} from './base-manager';
 
 // Organization manager
 export {
     organizationManager,
     type CreateOrganizationInput,
     type UpdateOrganizationInput,
-} from './organization-manager.js';
+} from './organization-manager';
 
 // User manager
 export {
@@ -29,7 +29,7 @@ export {
     type CreateUserInput,
     type UpdateUserInput,
     type UserListOptions,
-} from './user-manager.js';
+} from './user-manager';
 
 // Agent manager
 export {
@@ -42,7 +42,7 @@ export {
     type UpdateAgentInput,
     type AgentListOptions,
     type AgentWithRelations,
-} from './agent-manager.js';
+} from './agent-manager';
 
 // Client manager
 export {
@@ -50,7 +50,7 @@ export {
     type CreateClientInput,
     type UpdateClientInput,
     type ClientListOptions,
-} from './client-manager.js';
+} from './client-manager';
 
 // Block manager
 export {
@@ -58,7 +58,7 @@ export {
     type CreateBlockInput,
     type UpdateBlockInput,
     type BlockListOptions,
-} from './block-manager.js';
+} from './block-manager';
 
 // Tool manager
 export {
@@ -66,7 +66,7 @@ export {
     type CreateToolInput,
     type UpdateToolInput,
     type ToolListOptions,
-} from './tool-manager.js';
+} from './tool-manager';
 
 // Message manager
 export {
@@ -75,7 +75,7 @@ export {
     type CreateMessageInput,
     type UpdateMessageInput,
     type MessageListOptions,
-} from './message-manager.js';
+} from './message-manager';
 
 // Step manager
 export {
@@ -83,7 +83,7 @@ export {
     type CreateStepInput,
     type UpdateStepInput,
     type StepListOptions,
-} from './step-manager.js';
+} from './step-manager';
 
 // Provider manager
 export {
@@ -91,7 +91,7 @@ export {
     type CreateProviderInput,
     type UpdateProviderInput,
     type ProviderListOptions,
-} from './provider-manager.js';
+} from './provider-manager';
 
 // File manager
 export {
@@ -101,7 +101,7 @@ export {
     type FileListOptions,
     type CreateCloudMappingInput,
     type UpdateCloudMappingInput,
-} from './file-manager.js';
+} from './file-manager';
 
 // Memory managers
 export {
@@ -130,4 +130,4 @@ export {
     knowledgeMemoryManager,
     type CreateKnowledgeItemInput,
     type UpdateKnowledgeItemInput,
-} from './memory/index.js';
+} from './memory/index';

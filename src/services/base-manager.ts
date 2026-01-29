@@ -5,13 +5,13 @@
  */
 
 import { Prisma, PrismaClient } from '@prisma/client';
-import { prismaRaw } from '../database/prisma-client.js';
-import { getRedisClient, RedisMemoryClient } from '../database/redis-client.js';
-import { logger } from '../log.js';
+import { prismaRaw } from '../database/prisma-client';
+import { getRedisClient, RedisMemoryClient } from '../database/redis-client';
+import { logger } from '../log';
 import {
     NotFoundError,
     ValidationError,
-} from '../errors.js';
+} from '../errors';
 
 // ============================================================================
 // TYPES

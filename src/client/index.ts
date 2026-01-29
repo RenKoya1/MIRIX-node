@@ -7,13 +7,36 @@ export {
     MirixClient,
     createMirixClient,
     MirixApiError,
+    // Provider configuration
+    PROVIDER_DEFAULTS,
+    DEFAULT_META_AGENT_CONFIG,
+    getProviderConfig,
 } from './sdk.js';
 
 export type {
+    // Client config
     MirixClientConfig,
     AgentConfig,
-    ChatMessage,
-    ChatResponse,
     AgentInfo,
     ListResponse,
+    // Chat types
+    ChatMessage,
+    ChatResponse,
+    // Provider types
+    ProviderLlmConfig,
+    ProviderEmbeddingConfig,
+    ProviderConfig,
+    MetaAgentConfig,
+    InitializeMetaAgentConfig,
+    // Memory API types
+    MessageContent,
+    ConversationMessage,
+    AddMemoryOptions,
+    AddMemoryResult,
+    RetrieveWithConversationOptions,
+    RetrieveWithTopicOptions,
+    SearchOptions,
+    SearchAllUsersOptions,
+    MemoryRetrievalResult,
+    MemorySearchResult,
 } from './sdk.js';

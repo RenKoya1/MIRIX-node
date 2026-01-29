@@ -3,6 +3,6 @@
  * Central exports for all API routes
  */
 
-export { healthRoutes } from './health.js';
-export { agentRoutes } from './agents.js';
-export { messageRoutes } from './messages.js';
+export { healthRoutes } from './health';
+export { agentRoutes } from './agents';
+export { messageRoutes } from './messages';

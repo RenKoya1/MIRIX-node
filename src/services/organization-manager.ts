@@ -4,8 +4,8 @@
  */
 
 import { Organization, Prisma } from '@prisma/client';
-import { BaseManager, CacheConfig, ActorContext } from './base-manager.js';
-import { RedisMemoryClient } from '../database/redis-client.js';
+import { BaseManager, CacheConfig, ActorContext } from './base-manager';
+import { RedisMemoryClient } from '../database/redis-client';
 
 // ============================================================================
 // TYPES

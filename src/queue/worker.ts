@@ -3,9 +3,9 @@
  * Processes jobs from the queue manager
  */
 
-import { logger } from '../log.js';
-import { queueManager, QueueJob, JobResult } from './manager.js';
-import { memoryProcessor } from './memory-processor.js';
+import { logger } from '../log';
+import { queueManager, QueueJob, JobResult } from './manager';
+import { memoryProcessor } from './memory-processor';
 
 // ============================================================================
 // TYPES

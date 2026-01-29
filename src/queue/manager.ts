@@ -3,7 +3,7 @@
  * Manages background job queues for memory processing
  */
 
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 // ============================================================================
 // TYPES

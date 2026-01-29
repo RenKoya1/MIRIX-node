@@ -4,7 +4,7 @@
  */
 
 import { Step, Prisma } from '@prisma/client';
-import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager.js';
+import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager';
 
 // ============================================================================
 // TYPES

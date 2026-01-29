@@ -8,7 +8,7 @@ export {
     BaseMemoryManager,
     type MemoryListOptions,
     type CacheConfig,
-} from './base-memory-manager.js';
+} from './base-memory-manager';
 
 // Episodic memory
 export {
@@ -16,32 +16,32 @@ export {
     type CreateEpisodicEventInput,
     type UpdateEpisodicEventInput,
     type LastModify,
-} from './episodic-memory-manager.js';
+} from './episodic-memory-manager';
 
 // Semantic memory
 export {
     semanticMemoryManager,
     type CreateSemanticMemoryInput,
     type UpdateSemanticMemoryInput,
-} from './semantic-memory-manager.js';
+} from './semantic-memory-manager';
 
 // Procedural memory
 export {
     proceduralMemoryManager,
     type CreateProceduralMemoryInput,
     type UpdateProceduralMemoryInput,
-} from './procedural-memory-manager.js';
+} from './procedural-memory-manager';
 
 // Resource memory
 export {
     resourceMemoryManager,
     type CreateResourceMemoryInput,
     type UpdateResourceMemoryInput,
-} from './resource-memory-manager.js';
+} from './resource-memory-manager';
 
 // Knowledge memory
 export {
     knowledgeMemoryManager,
     type CreateKnowledgeItemInput,
     type UpdateKnowledgeItemInput,
-} from './knowledge-memory-manager.js';
+} from './knowledge-memory-manager';

@@ -10,9 +10,9 @@ export {
     buildSystemPrompt,
     SystemPrompts,
     Personas,
-} from './loader.js';
+} from './loader';
 
 export type {
     SystemPromptKey,
     PersonaKey,
-} from './loader.js';
+} from './loader';

@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "lib": ["ES2022"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": [
+      "ES2022"
+    ],
     "outDir": "./dist",
     "rootDir": "./src",
     "strict": true,
@@ -23,15 +25,18 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["./*"],
-      "@/schemas/*": ["./schemas/*"],
-      "@/services/*": ["./services/*"],
-      "@/agent/*": ["./agent/*"],
-      "@/llm_api/*": ["./llm_api/*"],
-      "@/server/*": ["./server/*"],
-      "@/orm/*": ["./orm/*"]
+      "@/*": [
+        "./*"
+      ]
     }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "tests", "src/services/wip"]
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "tests",
+    "src/services/wip"
+  ]
 }

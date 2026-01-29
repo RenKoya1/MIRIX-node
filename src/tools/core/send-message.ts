@@ -3,8 +3,8 @@
  * Core tool for sending messages to users
  */
 
-import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types.js';
-import { logger } from '../../log.js';
+import { ToolDefinition, ToolExecutionContext, ToolExecutionResult } from '../types';
+import { logger } from '../../log';
 
 // ============================================================================
 // SEND MESSAGE TOOL

@@ -5,9 +5,9 @@
 
 import { Context, Next } from 'hono';
 import { createHash } from 'crypto';
-import { prismaRaw } from '../../database/prisma-client.js';
-import { AuthenticationError, AuthorizationError } from '../../errors.js';
-import { logger } from '../../log.js';
+import { prismaRaw } from '../../database/prisma-client';
+import { AuthenticationError, AuthorizationError } from '../../errors';
+import { logger } from '../../log';
 
 // ============================================================================
 // AUTH CONTEXT TYPES

@@ -10,8 +10,8 @@ import {
     TerminalToolRule,
     ChildToolRule,
     MaxCountToolRule,
-} from './types.js';
-import { logger } from '../log.js';
+} from './types';
+import { logger } from '../log';
 
 // ============================================================================
 // EXECUTION STATE

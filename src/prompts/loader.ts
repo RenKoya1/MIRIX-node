@@ -6,7 +6,7 @@
 import { readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

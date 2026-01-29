@@ -5,10 +5,10 @@
 
 import { Hono } from 'hono';
 import { z } from 'zod';
-import { messageManager, CreateMessageInput } from '../../services/message-manager.js';
-import { authMiddleware, requirePermission } from '../middleware/auth.js';
-import { ValidationError } from '../../errors.js';
-import { logger } from '../../log.js';
+import { messageManager, CreateMessageInput } from '../../services/message-manager';
+import { authMiddleware, requirePermission } from '../middleware/auth';
+import { ValidationError } from '../../errors';
+import { logger } from '../../log';
 import { randomUUID } from 'crypto';
 
 // Helper to format Zod errors

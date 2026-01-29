@@ -8,26 +8,11 @@ import { createOpenAI } from '@ai-sdk/openai';
 import { createGoogleGenerativeAI } from '@ai-sdk/google';
 import { createAzure } from '@ai-sdk/azure';
 import { z } from 'zod';
-import { logger } from './log.js';
-
-// ============================================================================
-// CONSTANTS
-// ============================================================================
-
-/** Maximum supported embedding size - do NOT change or else DBs will need to be reset */
-export const MAX_EMBEDDING_DIM = 4096;
-
-/** Default chunk size for text splitting */
-export const DEFAULT_EMBEDDING_CHUNK_SIZE = 300;
-
-/** Tokenizer mappings for embedding models */
-export const EMBEDDING_TO_TOKENIZER_MAP: Record<string, string> = {
-    'text-embedding-3-small': 'cl100k_base',
-    'text-embedding-3-large': 'cl100k_base',
-    'text-embedding-ada-002': 'cl100k_base',
-};
-
-export const EMBEDDING_TO_TOKENIZER_DEFAULT = 'cl100k_base';
+import { logger } from './log';
+import {
+    MAX_EMBEDDING_DIM,
+    DEFAULT_EMBEDDING_CHUNK_SIZE,
+} from './constants';
 
 // ============================================================================
 // TYPES & SCHEMAS
@@ -651,14 +636,5 @@ export async function quickQueryEmbedding(queryText: string): Promise<number[]> 
 // VALIDATION UTILITIES
 // ============================================================================
 
-/**
- * Check if a URL is valid
- */
-export function isValidUrl(url: string): boolean {
-    try {
-        new URL(url);
-        return true;
-    } catch {
-        return false;
-    }
-}
+// isValidUrl functionality should be imported directly from utils
+// export { isValidUrl } from './utils';

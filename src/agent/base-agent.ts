@@ -6,16 +6,16 @@
 import { Agent, Message } from '@prisma/client';
 import { generateText } from 'ai';
 import { z } from 'zod';
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 // Message type for LLM context
 type LLMMessage = {
     role: 'user' | 'assistant' | 'system';
     content: string;
 };
-import { prismaRaw } from '../database/prisma-client.js';
-import { createModel } from '../llm_api/client.js';
-import { LLMConfig, createDefaultLLMConfig } from '../schemas/llm_config.js';
+import { prismaRaw } from '../database/prisma-client';
+import { createModel } from '../llm_api/client';
+import { LLMConfig, createDefaultLLMConfig } from '../schemas/llm_config';
 import {
     AgentState,
     AgentStatus,
@@ -28,7 +28,7 @@ import {
     updateTokenUsage,
     setShouldStop,
     setError,
-} from './agent-state.js';
+} from './agent-state';
 import {
     ToolDefinition,
     ToolCall,
@@ -38,7 +38,7 @@ import {
     toolRegistry,
     toolRuleSolver,
     updateExecutionState,
-} from '../tools/index.js';
+} from '../tools/index';
 
 // ============================================================================
 // CONFIGURATION

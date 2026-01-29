@@ -10,9 +10,9 @@ import {
     ToolExecutionContext,
     ToolExecutionResult,
     ToolParameterSchema,
-} from './types.js';
-import { logger } from '../log.js';
-import { NotFoundError, ValidationError } from '../errors.js';
+} from './types';
+import { logger } from '../log';
+import { NotFoundError, ValidationError } from '../errors';
 
 // ============================================================================
 // TOOL REGISTRY

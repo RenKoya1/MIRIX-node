@@ -4,14 +4,14 @@
  */
 
 import { Context } from 'hono';
-import { logger } from '../../log.js';
+import { logger } from '../../log';
 import {
     MirixError,
     NotFoundError,
     ValidationError,
     AuthenticationError,
     AuthorizationError,
-} from '../../errors.js';
+} from '../../errors';
 
 // ============================================================================
 // ERROR RESPONSE TYPE

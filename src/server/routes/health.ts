@@ -4,8 +4,8 @@
  */
 
 import { Hono } from 'hono';
-import { prismaRaw } from '../../database/prisma-client.js';
-import { logger } from '../../log.js';
+import { prismaRaw } from '../../database/prisma-client';
+import { logger } from '../../log';
 
 export const healthRoutes = new Hono();
 

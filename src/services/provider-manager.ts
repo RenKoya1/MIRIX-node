@@ -4,8 +4,8 @@
  */
 
 import { Provider, Prisma } from '@prisma/client';
-import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager.js';
-import { ValidationError } from '../errors.js';
+import { BaseManager, CacheConfig, ActorContext, ListOptions, ListResult } from './base-manager';
+import { ValidationError } from '../errors';
 
 // ============================================================================
 // TYPES

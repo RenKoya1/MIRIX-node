@@ -3,9 +3,9 @@
  * Handles background memory processing tasks
  */
 
-import { prismaRaw } from '../database/prisma-client.js';
-import { logger } from '../log.js';
-import type { MemoryJobData, CleanupJobData } from './worker.js';
+import { prismaRaw } from '../database/prisma-client';
+import { logger } from '../log';
+import type { MemoryJobData, CleanupJobData } from './worker';
 
 // ============================================================================
 // MEMORY PROCESSOR

@@ -22,13 +22,13 @@ export {
     ToolReturnSchema,
     ToolExecutionResultSchema,
     MCPServerConfigSchema,
-} from './types.js';
+} from './types';
 
 // Registry
 export {
     toolRegistry,
     createTool,
-} from './registry.js';
+} from './registry';
 
 // Rule Solver
 export {
@@ -40,20 +40,20 @@ export {
     childRule,
     maxCountRule,
     type ToolExecutionState,
-} from './tool-rule-solver.js';
+} from './tool-rule-solver';
 
 // Sandbox
 export {
     toolSandbox,
     createSandbox,
     type SandboxConfig,
-} from './sandbox.js';
+} from './sandbox';
 
 // Core Tools
 export {
     sendMessageTool,
     conversationSearchTool,
-} from './core/index.js';
+} from './core/index';
 
 // Memory Tools
 export {
@@ -61,4 +61,4 @@ export {
     coreMemoryGetTool,
     coreMemoryUpdateTool,
     coreMemoryAppendTool,
-} from './memory/index.js';
+} from './memory/index';

@@ -4,14 +4,14 @@
  */
 
 import { Agent, Block } from '@prisma/client';
-import { BaseAgent, AgentConfig, AgentResult } from './base-agent.js';
+import { BaseAgent, AgentConfig, AgentResult } from './base-agent';
 import {
     ToolCall,
     ToolReturn,
     ToolExecutionContext,
     toolRegistry,
-} from '../tools/index.js';
-import { blockManager } from '../services/block-manager.js';
+} from '../tools/index';
+import { blockManager } from '../services/block-manager';
 
 // ============================================================================
 // MIRIX AGENT

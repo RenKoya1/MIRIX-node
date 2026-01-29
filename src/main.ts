@@ -3,10 +3,10 @@
  * Starts the REST API server and background workers
  */
 
-import { startServer } from './server/index.js';
-import { queueWorker } from './queue/index.js';
-import { connectDatabase, disconnectDatabase } from './database/index.js';
-import { getLogger } from './log.js';
+import { startServer } from './server/index';
+import { queueWorker } from './queue/index';
+import { connectDatabase, disconnectDatabase } from './database/index';
+import { getLogger } from './log';
 
 const logger = getLogger('main');
 

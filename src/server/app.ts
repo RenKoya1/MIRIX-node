@@ -10,13 +10,13 @@ import { prettyJSON } from 'hono/pretty-json';
 import { timing } from 'hono/timing';
 import { logger as honoLogger } from 'hono/logger';
 
-import { errorHandler, notFoundHandler } from './middleware/error-handler.js';
-import { logger } from '../log.js';
+import { errorHandler, notFoundHandler } from './middleware/error-handler';
+import { logger } from '../log';
 
 // Routes
-import { healthRoutes } from './routes/health.js';
-import { agentRoutes } from './routes/agents.js';
-import { messageRoutes } from './routes/messages.js';
+import { healthRoutes } from './routes/health';
+import { agentRoutes } from './routes/agents';
+import { messageRoutes } from './routes/messages';
 
 // ============================================================================
 // APP SETUP

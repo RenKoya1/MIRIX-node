@@ -4,10 +4,10 @@
  */
 
 import { PrismaClient, Prisma } from '@prisma/client';
-import { prismaRaw } from '../../database/prisma-client.js';
-import { logger } from '../../log.js';
-import { NotFoundError, ValidationError } from '../../errors.js';
-import { ActorContext, ListResult } from '../base-manager.js';
+import { prismaRaw } from '../../database/prisma-client';
+import { logger } from '../../log';
+import { NotFoundError, ValidationError } from '../../errors';
+import { ActorContext, ListResult } from '../base-manager';
 
 // ============================================================================
 // TYPES

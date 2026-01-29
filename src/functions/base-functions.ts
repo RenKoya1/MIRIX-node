@@ -4,7 +4,7 @@
  */
 
 import { z } from 'zod';
-import { buildFunctionSchema, type FunctionSchema } from './schema-generator.js';
+import { buildFunctionSchema, type FunctionSchema } from './schema-generator';
 
 // ============================================================================
 // FUNCTION IMPLEMENTATIONS

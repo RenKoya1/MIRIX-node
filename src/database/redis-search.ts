@@ -4,8 +4,8 @@
  * Supports BM25 text search and KNN vector search for memory tables
  */
 
-import { logger } from '../log.js';
-import { RedisMemoryClient, getRedisClient } from './redis-client.js';
+import { logger } from '../log';
+import { RedisMemoryClient, getRedisClient } from './redis-client';
 
 // ============================================================================
 // INDEX SCHEMA DEFINITIONS

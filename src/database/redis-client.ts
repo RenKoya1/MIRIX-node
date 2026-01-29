@@ -11,9 +11,9 @@
  * - Hybrid text+vector search capabilities
  */
 
-import Redis from 'ioredis';
+import { Redis } from 'ioredis';
 import type { RedisOptions } from 'ioredis';
-import { logger } from '../log.js';
+import { logger } from '../log';
 
 // Global Redis client instance
 let redisClientInstance: RedisMemoryClient | null = null;
@@ -93,7 +93,7 @@ export class RedisMemoryClient {
     static readonly AGENT_PREFIX = 'agent:';
     static readonly TOOL_PREFIX = 'tool:';
 
-    readonly client: Redis.default;
+    readonly client: Redis;
     private readonly ttl: RedisTTLConfig;
     private isConnected = false;
 
@@ -120,9 +120,9 @@ export class RedisMemoryClient {
 
         // If URI is provided, parse and use it
         if (config.redisUri) {
-            this.client = new Redis.default(config.redisUri, redisOptions);
+            this.client = new Redis(config.redisUri, redisOptions);
         } else {
-            this.client = new Redis.default(redisOptions);
+            this.client = new Redis(redisOptions);
         }
 
         // Setup event handlers
@@ -142,7 +142,7 @@ export class RedisMemoryClient {
             logger.info('Redis ready');
         });
 
-        this.client.on('error', (error) => {
+        this.client.on('error', (error: Error) => {
             logger.error({ error: error.message }, 'Redis error');
         });
 

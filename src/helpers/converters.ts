@@ -3,7 +3,7 @@
  * Type conversion utilities for LLM configs, messages, and tool rules
  */
 
-import type { LLMConfig } from '../schemas/llm_config.js';
+import type { LLMConfig } from '../schemas/llm_config';
 
 // ============================================================================
 // MESSAGE CONTENT TYPES

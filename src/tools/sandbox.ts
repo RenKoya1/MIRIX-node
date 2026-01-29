@@ -4,8 +4,8 @@
  */
 
 import { VM, VMScript } from 'vm2';
-import { ToolExecutionContext, ToolExecutionResult } from './types.js';
-import { logger } from '../log.js';
+import { ToolExecutionContext, ToolExecutionResult } from './types';
+import { logger } from '../log';
 
 // ============================================================================
 // SANDBOX CONFIGURATION

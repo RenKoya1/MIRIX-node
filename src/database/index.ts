@@ -12,7 +12,7 @@ export {
     healthCheck,
     getDatabaseStats,
     type ExtendedPrismaClient,
-} from './prisma-client.js';
+} from './prisma-client';
 
 export {
     softDeleteMiddleware,
@@ -26,7 +26,7 @@ export {
     clearAuditContext,
     withAuditContext,
     type AuditContext,
-} from './middleware.js';
+} from './middleware';
 
 export {
     RedisMemoryClient,
@@ -35,7 +35,7 @@ export {
     closeRedisClient,
     type RedisClientConfig,
     type RedisTTLConfig,
-} from './redis-client.js';
+} from './redis-client';
 
 export {
     createIndex,
@@ -50,4 +50,4 @@ export {
     type SearchOptions,
     type VectorSearchOptions,
     type SearchResult,
-} from './redis-search.js';
+} from './redis-search';
