@@ -1,0 +1,67 @@
+{
+  "name": "mirix-node",
+  "version": "0.1.0",
+  "description": "Multi-Agent Personal Assistant with an Advanced Memory System - TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
+  },
+  "keywords": [
+    "ai",
+    "memory",
+    "agent",
+    "llm",
+    "assistant",
+    "chatbot",
+    "multimodal",
+    "typescript"
+  ],
+  "author": "RenKoya1",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ai-sdk/anthropic": "^3.0.29",
+    "@ai-sdk/google": "^3.0.16",
+    "@ai-sdk/openai": "^3.0.21",
+    "@hono/node-server": "^1.14.1",
+    "@prisma/client": "^6.3.1",
+    "ai": "^6.0.59",
+    "dotenv": "^16.4.7",
+    "hono": "^4.7.4",
+    "ioredis": "^5.5.0",
+    "pino": "^9.6.0",
+    "pino-pretty": "^13.0.0",
+    "prisma": "^6.3.1",
+    "tiktoken": "^1.0.20",
+    "uuid": "^11.0.7",
+    "vm2": "^3.10.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.4",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
